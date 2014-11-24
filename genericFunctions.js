@@ -150,3 +150,17 @@ function readFile (fileName) {
 			'part of the testing team, sorry');
 	}
 }
+
+/*
+ * Return url param with name name
+*/
+
+function getParameterByName(name) {
+    var regex, results;
+
+    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+    regex = new RegExp("[\\?&]" + name + "=([^&#]*)");
+    results = regex.exec(location.search);
+
+    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+}
