@@ -22,7 +22,7 @@ Object.size = function(obj) {
  * Returns a random property of an object
 */
 var getRandomProperty = function (obj) {
-    var keys = Object.keys(obj)
+    var keys = Object.keys(obj);
     return obj[keys[ keys.length * Math.random() << 0]];
 };
 
@@ -43,7 +43,7 @@ function getKeyFromNumber (obj, key){
 }
 
 /*
- * Returns a number of a range maped into another range
+ * Returns a number of a range mapped into another range
 */
 Number.prototype.map = function ( in_min , in_max , out_min , out_max ) {
   return ( this - in_min ) * ( out_max - out_min ) / ( in_max - in_min ) + out_min;
@@ -146,7 +146,7 @@ function readFile (fileName) {
 			alert('The File APIs are not fully supported by your browser.');
 		}
 	} else {
-		console.log ('Your browser doesn\'t support the FileReader functionality of HTML5, you\'re not suited to be' +
+		console.log ('Your browser does not support the FileReader functionality of HTML5, you\'re not suited to be' +
 			'part of the testing team, sorry');
 	}
 }
