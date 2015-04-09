@@ -1,3 +1,10 @@
+// FUNCTIONS
+function object(o) {
+	function F() {}
+	F.prototype = o;
+	return new F();
+}
+
 // PROTOTYPES
 
 /*
@@ -68,7 +75,6 @@ function formatNumberLength(num, length) {
 */
 function isAppening(prob) {
 	return getRandomInt(0, 100) <= prob;
-
 }
 
 /*
@@ -126,11 +132,11 @@ function createCORSRequest(method, url){
 /*
  * Reads a file from the system
 */
-function readFile (fileName) {
+function readFile (pathToFile) {
 	if (FileReader)
 	{
 		if (window.File && window.FileReader && window.FileList && window.Blob) {
-			var url = 'http://ivy-corp.com/src/data/'+fileName;
+			var url = pathToFile;
 
 			var request = createCORSRequest('GET', url);
 			if (request){
