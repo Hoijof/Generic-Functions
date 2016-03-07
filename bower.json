@@ -1,6 +1,6 @@
 {
   "name": "hoijof.genericFunctions",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "authors": [
     "Humberto Gómez López <hoijof@gmail.com.com"
   ],
@@ -20,9 +20,6 @@
     "gradlew",
     "gradlew.bat"
   ],
-  "dependencies": {
-
-  },
-  "resolutions": {
-  }
+  "dependencies": {},
+  "resolutions": {}
 }
