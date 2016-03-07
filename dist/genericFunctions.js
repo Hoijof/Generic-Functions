@@ -100,6 +100,12 @@ function loadjsfile( filename)
 }
 
 /*
+ * Gets a random int from 1 to the number passed
+ */
+function roll(max) {
+	return getRandomInt(0, max);
+}
+/*
  * Returns a random integer between a range
 */
 function getRandomInt (min, max) {
